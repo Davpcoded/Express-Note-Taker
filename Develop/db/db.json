@@ -1,1 +1,7 @@
-[{"title":"Test Title","text":"Test text"}]
+[
+  {
+    "title": "note 1",
+    "text": "hello world",
+    "id": "f446c393-c285-459c-bec8-1c33c8b0b089"
+  }
+]

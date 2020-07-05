@@ -1,15 +1,10 @@
-// LOAD DATA
-// We are linking our routes to a series of "data" sources.
-// These data sources hold arrays of information on table-data, waitinglist, etc.
-var dataBase = require("../db/db.json");
+var database = require("../db/db.json");
 var fs = require("fs");
 var { v4: uuidv4 } = require("uuid");
 
-// ROUTING
-
 module.exports = function (app) {
   app.get("/api/notes", function (req, res) {
-    res.json(dataBase);
+    res.json(database);
   });
 
   app.post("/api/notes", function (req, res) {
